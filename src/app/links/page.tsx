@@ -15,17 +15,17 @@ const links = [
   },
   {
     label: "💬 WhatsApp",
-    href: "https://wa.me/59899000000?text=Hola%20Camila%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta.",
+    href: "https://wa.me/59899227759?text=Hola%20Camila%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta.",
     external: true,
   },
   {
     label: "📸 Instagram",
-    href: "https://www.instagram.com/camilajurfest",
+    href: "https://www.instagram.com/camila.sexoyterapia",
     external: true,
   },
   {
     label: "🎵 TikTok",
-    href: "https://www.tiktok.com/@camilajurfest",
+    href: "https://www.tiktok.com/@camila.sexoyterapia",
     external: true,
   },
   {

@@ -40,10 +40,10 @@ export function LocalBusinessStructuredData() {
         ],
         hasMap: "https://maps.google.com/?q=Pocitos,Montevideo,Uruguay",
         sameAs: [
-          "https://www.instagram.com/camilajurfest",
-          "https://www.tiktok.com/@camilajurfest",
+          "https://www.instagram.com/camila.sexoyterapia",
+          "https://www.tiktok.com/@camila.sexoyterapia",
         ],
-        image: "https://www.camilajurfest.com/og-image.jpg",
+        image: "https://www.camilajurfest.com/og-image",
       },
       {
         "@type": "Person",
@@ -53,7 +53,7 @@ export function LocalBusinessStructuredData() {
         description:
           "Psicóloga clínica y sexóloga con formación en UCU, SUS Uruguay y UBA. Especializada en terapia sexual, de pareja y perinatal en Montevideo.",
         url: "https://www.camilajurfest.com",
-        image: "https://www.camilajurfest.com/og-image.jpg",
+        image: "https://www.camilajurfest.com/og-image",
         address: {
           "@type": "PostalAddress",
           addressLocality: "Montevideo",

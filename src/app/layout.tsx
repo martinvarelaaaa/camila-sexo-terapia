@@ -50,7 +50,7 @@ export const metadata: Metadata = {
       "Psicóloga y sexóloga clínica en Montevideo. Terapia individual, de pareja, sexual y perinatal. Sin tabúes, con enfoque humano y científico.",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/og-image",
         width: 1200,
         height: 630,
         alt: "Camila Jurfest — Psicóloga y Sexóloga Clínica",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     title: "Camila Jurfest — Psicóloga y Sexóloga Clínica en Montevideo",
     description:
       "Psicóloga y sexóloga clínica en Montevideo. Terapia sin tabúes.",
-    images: ["/og-image.jpg"],
+    images: ["/og-image"],
   },
   robots: {
     index: true,

@@ -81,7 +81,7 @@ export default function ContactoPage() {
 
               {/* WhatsApp */}
               <a
-                href="https://wa.me/59899000000?text=Hola%20Camila%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta."
+                href="https://wa.me/59899227759?text=Hola%20Camila%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-start gap-4 p-6 rounded-2xl transition-all hover:shadow-md group"
@@ -191,7 +191,7 @@ export default function ContactoPage() {
                 </p>
                 <div className="flex gap-3">
                   <a
-                    href="https://www.instagram.com/camilajurfest"
+                    href="https://www.instagram.com/camila.sexoyterapia"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-4 py-2 rounded-full text-sm font-medium transition-all hover:opacity-80"
@@ -203,7 +203,7 @@ export default function ContactoPage() {
                     Instagram
                   </a>
                   <a
-                    href="https://www.tiktok.com/@camilajurfest"
+                    href="https://www.tiktok.com/@camila.sexoyterapia"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-4 py-2 rounded-full text-sm font-medium transition-all hover:opacity-80"

@@ -397,7 +397,7 @@ export default function HomePage() {
               Agendar consulta
             </Link>
             <a
-              href="https://wa.me/59899000000"
+              href="https://wa.me/59899227759"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-4 rounded-full font-semibold text-base border-2 border-white text-white transition-all hover:bg-white/10"

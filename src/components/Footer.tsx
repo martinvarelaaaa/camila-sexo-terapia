@@ -67,7 +67,7 @@ export function Footer() {
             <ul className="space-y-2 text-sm" style={{ color: "rgba(255,255,255,0.6)" }}>
               <li>
                 <a
-                  href="https://wa.me/59899000000"
+                  href="https://wa.me/59899227759"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-white transition-colors"
