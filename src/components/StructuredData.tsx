@@ -1,3 +1,5 @@
+import type { Service } from "@/app/servicios/data";
+
 export function LocalBusinessStructuredData() {
   const data = {
     "@context": "https://schema.org",
@@ -9,8 +11,8 @@ export function LocalBusinessStructuredData() {
         description:
           "Psicóloga y sexóloga clínica en Montevideo. Terapia individual, de pareja, sexual y perinatal. Atención presencial en Pocitos y online.",
         url: "https://www.camilajurfest.com",
-        telephone: "+598-99-000-000",
-        email: "hola@camilajurfest.com",
+        telephone: "+598992277590",
+        email: "camila.sexoyterapia@gmail.com",
         address: {
           "@type": "PostalAddress",
           streetAddress: "Pocitos",
@@ -76,6 +78,77 @@ export function LocalBusinessStructuredData() {
         },
       },
     ],
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+    />
+  );
+}
+
+const SERVICE_BASE_URL = "https://www.camilajurfest.com";
+
+export function ServiceStructuredData({ service }: { service: Service }) {
+  const data = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${SERVICE_BASE_URL}/${service.slug}#service`,
+    name: service.title,
+    description: service.seoDescription,
+    url: `${SERVICE_BASE_URL}/${service.slug}`,
+    provider: {
+      "@id": `${SERVICE_BASE_URL}/#business`,
+    },
+    serviceType: service.title,
+    areaServed: [
+      { "@type": "City", name: "Montevideo" },
+      { "@type": "Country", name: "Uruguay" },
+    ],
+    availableChannel: [
+      {
+        "@type": "ServiceChannel",
+        serviceUrl: `${SERVICE_BASE_URL}/contacto`,
+        serviceLocation: {
+          "@type": "Place",
+          name: "Pocitos, Montevideo",
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Montevideo",
+            addressRegion: "Montevideo",
+            addressCountry: "UY",
+          },
+        },
+      },
+    ],
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+    />
+  );
+}
+
+export interface ServiceFAQ {
+  question: string;
+  answer: string;
+}
+
+export function FAQStructuredData({ faqs }: { faqs: ServiceFAQ[] }) {
+  const data = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
   };
 
   return (

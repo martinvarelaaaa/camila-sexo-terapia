@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Service } from "@/app/servicios/data";
+import { ServiceStructuredData, FAQStructuredData } from "@/components/StructuredData";
 
 const howItWorks = [
   { icon: "📍", title: "Presencial", description: "Consultorio en Pocitos, Montevideo. Ambiente cálido y privado." },
@@ -11,6 +12,9 @@ const howItWorks = [
 export function ServicePage({ service }: { service: Service }) {
   return (
     <>
+      <ServiceStructuredData service={service} />
+      <FAQStructuredData faqs={service.faqs} />
+
       {/* Header */}
       <section
         className="pt-32 pb-16"
@@ -127,6 +131,51 @@ export function ServicePage({ service }: { service: Service }) {
           </div>
         </div>
       </section>
+
+      {/* FAQ */}
+      {service.faqs.length > 0 && (
+        <section className="py-16" style={{ backgroundColor: "var(--cream)" }}>
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2
+              className="text-2xl font-bold mb-10 text-center"
+              style={{ fontFamily: "var(--font-playfair), Georgia, serif", color: "var(--charcoal)" }}
+            >
+              Preguntas frecuentes
+            </h2>
+            <div className="space-y-4">
+              {service.faqs.map((faq, i) => (
+                <details
+                  key={i}
+                  className="group rounded-2xl p-6 cursor-pointer"
+                  style={{ backgroundColor: "var(--warm-white)" }}
+                >
+                  <summary
+                    className="flex items-center justify-between font-semibold text-base list-none"
+                    style={{ color: "var(--charcoal)" }}
+                  >
+                    {faq.question}
+                    <svg
+                      className="w-5 h-5 flex-shrink-0 ml-4 transition-transform group-open:rotate-180"
+                      style={{ color: "var(--lavender-dark)" }}
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </summary>
+                  <p
+                    className="mt-4 text-sm leading-relaxed"
+                    style={{ color: "var(--warm-gray)" }}
+                  >
+                    {faq.answer}
+                  </p>
+                </details>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* CTA */}
       <section
