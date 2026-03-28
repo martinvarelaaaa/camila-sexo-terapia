@@ -3,9 +3,9 @@ import Link from "next/link";
 import { LocalBusinessStructuredData } from "@/components/StructuredData";
 
 export const metadata: Metadata = {
-  title: "Camila Jurfest — Psicóloga y Sexóloga Clínica en Montevideo",
+  title: "Camila Jurfest | Psicóloga y Sexóloga Clínica en Montevideo",
   description:
-    "Psicóloga y sexóloga clínica en Montevideo, Pocitos. Terapia individual, de pareja, sexual y perinatal. Atención presencial y online. Primera consulta sin compromiso.",
+    "Camila Jurfest, psicóloga y sexóloga clínica en Pocitos, Montevideo. Terapia sexual, de pareja y psicoterapia individual. Atención online para todo Uruguay. Reservá tu sesión.",
   alternates: { canonical: "/" },
 };
 
@@ -16,7 +16,7 @@ const services = [
     title: "Psicoterapia Individual",
     description:
       "Un espacio tuyo, para entenderte mejor. Trabajamos juntas lo que te pesa: ansiedad, autoestima, vínculos, identidad.",
-    href: "/servicios#individual",
+    href: "/psicoterapia-individual",
   },
   {
     id: "pareja",
@@ -24,7 +24,7 @@ const services = [
     title: "Terapia de Pareja",
     description:
       "Para las parejas que quieren reconectarse. Herramientas concretas para comunicarse, entenderse y volver a elegirse.",
-    href: "/servicios#pareja",
+    href: "/terapia-de-pareja",
   },
   {
     id: "sexual",
@@ -32,7 +32,7 @@ const services = [
     title: "Terapia Sexual",
     description:
       "Sin tabúes y con base científica. Si algo en tu vida sexual no te cierra, tiene nombre y tiene solución.",
-    href: "/servicios#sexual",
+    href: "/terapia-sexual",
   },
   {
     id: "perinatal",
@@ -40,7 +40,7 @@ const services = [
     title: "Terapia Perinatal",
     description:
       "Acompañamiento en el embarazo y posparto. Porque la maternidad no siempre es lo que nos prometieron.",
-    href: "/servicios#perinatal",
+    href: "/terapia-perinatal",
   },
 ];
 

@@ -18,11 +18,11 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: {
-    default: "Camila Jurfest — Psicóloga y Sexóloga Clínica en Montevideo",
+    default: "Camila Jurfest | Psicóloga y Sexóloga Clínica en Montevideo",
     template: "%s | Camila Jurfest",
   },
   description:
-    "Psicóloga y sexóloga clínica en Montevideo. Terapia individual, de pareja, sexual y perinatal. Atención presencial en Pocitos y online. Sin tabúes, con enfoque humano y científico.",
+    "Camila Jurfest, psicóloga y sexóloga clínica en Pocitos, Montevideo. Terapia sexual, de pareja y psicoterapia individual. Atención online para todo Uruguay. Reservá tu sesión.",
   keywords: [
     "psicóloga Montevideo",
     "sexóloga clínica Uruguay",

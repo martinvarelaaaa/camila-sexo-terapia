@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Sobre mí — Camila Jurfest, Psicóloga y Sexóloga Clínica",
+  title: "Camila Jurfest - Psicóloga y Sexóloga Clínica en Montevideo",
   description:
-    "Conocé a Camila Jurfest: psicóloga clínica y sexóloga formada en UCU, SUS Uruguay y UBA. Trabajo en Pocitos, Montevideo, de forma presencial y online. Enfoque humano, sin tabúes.",
+    "Conocé a Camila Jurfest, Lic. Psicóloga (UCU), Sexóloga Clínica (SUS Uruguay) y Terapeuta Sexual (UBA). Consulta en Pocitos, Montevideo, y online para todo Uruguay.",
   alternates: { canonical: "/sobre-mi" },
   openGraph: {
-    title: "Sobre mí — Camila Jurfest",
+    title: "Camila Jurfest - Psicóloga y Sexóloga Clínica en Montevideo",
     description:
       "Psicóloga clínica y sexóloga en Montevideo. Formación en UCU, SUS Uruguay y UBA. Cara a la comunidad en Oceano FM.",
     url: "https://www.camilajurfest.com/sobre-mi",

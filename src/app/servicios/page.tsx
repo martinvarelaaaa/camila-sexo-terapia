@@ -1,101 +1,19 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { services } from "./data";
 
 export const metadata: Metadata = {
-  title: "Servicios — Terapia Individual, de Pareja, Sexual y Perinatal",
+  title: "Servicios — Terapia Individual, de Pareja, Sexual y Perinatal | Camila Jurfest",
   description:
-    "Psicoterapia individual, terapia de pareja, terapia sexual y terapia perinatal en Montevideo. Atención presencial en Pocitos y online. Camila Jurfest, psicóloga y sexóloga clínica.",
+    "Psicoterapia individual, terapia de pareja, terapia sexual y terapia perinatal en Montevideo. Atención presencial en Pocitos y online para todo Uruguay. Camila Jurfest, psicóloga y sexóloga clínica.",
   alternates: { canonical: "/servicios" },
   openGraph: {
-    title: "Servicios — Camila Jurfest",
+    title: "Servicios — Camila Jurfest | Psicóloga y Sexóloga Clínica Montevideo",
     description:
       "Terapia individual, de pareja, sexual y perinatal en Montevideo. Sin tabúes, con enfoque humano y científico.",
     url: "https://www.camilajurfest.com/servicios",
   },
 };
-
-const services = [
-  {
-    id: "individual",
-    emoji: "🌱",
-    title: "Psicoterapia Individual",
-    subtitle: "Para entenderte mejor",
-    keywordSlug: "psicoterapia individual Montevideo",
-    description: `Un espacio propio, confidencial y sin juicio. La terapia individual es para vos si sentís que algo no está bien y no sabés muy bien qué es, si ciertas situaciones te desbordan, si querés trabajar tu autoestima, tu historia, tus vínculos.
-
-No hace falta tener un "problema grave". Hace falta querer conocerte mejor y tener herramientas para vivir con más bienestar.`,
-    whatWeWork: [
-      "Ansiedad y estrés",
-      "Autoestima y autoconocimiento",
-      "Duelos y pérdidas",
-      "Identidad y orientación sexual",
-      "Relaciones y vínculos",
-      "Trauma y experiencias difíciles",
-      "Transiciones vitales",
-    ],
-    cta: "Quiero una consulta individual",
-  },
-  {
-    id: "pareja",
-    emoji: "🤝",
-    title: "Terapia de Pareja",
-    subtitle: "Para reconectarse",
-    keywordSlug: "terapia de pareja Montevideo",
-    description: `La terapia de pareja no es solo para cuando todo está roto. Es para cuando algo no fluye y quieren entender qué pasa — antes de que sea tarde, o cuando ya están en crisis y quieren saber si hay camino.
-
-Trabajo con parejas de todo tipo: heterosexuales, diversas, convivientes o no, con o sin hijos. Sin prejuicios y sin tomar partido.`,
-    whatWeWork: [
-      "Comunicación y conflicto crónico",
-      "Distancia emocional y/o sexual",
-      "Infidelidades y reconstrucción",
-      "Diferencias en el deseo sexual",
-      "Convivencia y roles",
-      "Decisiones de vida (hijos, separación)",
-      "Reconexión y vitalidad",
-    ],
-    cta: "Quiero una consulta de pareja",
-  },
-  {
-    id: "sexual",
-    emoji: "💜",
-    title: "Terapia Sexual",
-    subtitle: "Sin tabúes",
-    keywordSlug: "terapeuta sexual Montevideo",
-    description: `La sexología clínica trata dificultades sexuales desde un abordaje científico, humano y sin juicio. Si algo en tu vida sexual no te cierra — duele, no funciona como querés, hay algo que evitás o que te preocupa — tiene nombre y tiene solución.
-
-No tenés que saber exactamente qué te pasa para consultar. Eso lo vemos juntas.`,
-    whatWeWork: [
-      "Dolor en las relaciones sexuales (dispareunia, vaginismo)",
-      "Disfunción eréctil y eyaculación precoz",
-      "Falta o exceso de deseo sexual",
-      "Dificultad para llegar al orgasmo",
-      "Identidad sexual y de género",
-      "Compulsividad sexual",
-      "Sexualidad en el contexto de una enfermedad",
-    ],
-    cta: "Quiero una consulta sexual",
-  },
-  {
-    id: "perinatal",
-    emoji: "🌸",
-    title: "Terapia Perinatal",
-    subtitle: "Durante y después del embarazo",
-    keywordSlug: "terapia perinatal Montevideo",
-    description: `El embarazo y el posparto son etapas de transformación enorme — y no siempre son lo que la cultura promete. La terapia perinatal acompaña a personas gestantes y no gestantes en el proceso de convertirse en madres/padres, con todo lo que eso trae.
-
-Trabajo con ansiedad en el embarazo, duelos perinatales, posparto difícil, identidad materna/paterna, y más.`,
-    whatWeWork: [
-      "Ansiedad prenatal y miedo al parto",
-      "Depresión y ansiedad posparto",
-      "Duelo perinatal (pérdidas gestacionales)",
-      "Identidad materna/paterna y 'matrescence'",
-      "Lactancia y vínculo temprano",
-      "Pareja en el contexto perinatal",
-      "Retorno al trabajo posparto",
-    ],
-    cta: "Quiero una consulta perinatal",
-  },
-];
 
 export default function ServiciosPage() {
   return (
