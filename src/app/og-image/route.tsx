@@ -14,7 +14,7 @@ export function GET() {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          background: "linear-gradient(135deg, #e8e0f0 0%, #faf8f5 50%, #d4e4d3 100%)",
+          background: "linear-gradient(135deg, #D0F4F0 0%, #FAFAF9 50%, #EAE4FF 100%)",
           fontFamily: "Georgia, serif",
           padding: "60px",
         }}
@@ -23,7 +23,7 @@ export function GET() {
           style={{
             width: "100px",
             height: "4px",
-            backgroundColor: "#8b7aa8",
+            backgroundColor: "#1A8A7E",
             marginBottom: "40px",
             borderRadius: "2px",
           }}
@@ -31,7 +31,7 @@ export function GET() {
         <p
           style={{
             fontSize: "22px",
-            color: "#8b7aa8",
+            color: "#1A8A7E",
             letterSpacing: "0.2em",
             textTransform: "uppercase",
             marginBottom: "20px",
@@ -55,7 +55,7 @@ export function GET() {
         <p
           style={{
             fontSize: "28px",
-            color: "#6b6560",
+            color: "#6B6570",
             textAlign: "center",
             maxWidth: "800px",
             lineHeight: "1.4",
@@ -70,7 +70,7 @@ export function GET() {
           style={{
             marginTop: "50px",
             padding: "16px 40px",
-            backgroundColor: "#8b7aa8",
+            backgroundColor: "#1A8A7E",
             borderRadius: "50px",
             color: "white",
             fontSize: "22px",

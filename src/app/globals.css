@@ -1,17 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  --lavender: #b8a9c9;
-  --lavender-light: #e8e0f0;
-  --lavender-dark: #8b7aa8;
-  --sage: #8faa8e;
-  --sage-light: #d4e4d3;
-  --sage-dark: #5f7a5e;
-  --cream: #faf8f5;
-  --warm-white: #f5f0eb;
-  --charcoal: #2d2d2d;
-  --warm-gray: #6b6560;
-  --accent: #c4a882;
+  /* Brand teal — primary color from Camila's Instagram */
+  --lavender: #2BBDAF;
+  --lavender-light: #D0F4F0;
+  --lavender-dark: #1A8A7E;
+  /* Brand purple — secondary color from Camila's Instagram */
+  --sage: #8860CC;
+  --sage-light: #EAE4FF;
+  --sage-dark: #5E3CA8;
+  /* Neutrals */
+  --cream: #FAFAF9;
+  --warm-white: #F4F2EF;
+  --charcoal: #2D2D2D;
+  --warm-gray: #6B6570;
+  --accent: #C8E83A;
 }
 
 @theme inline {
@@ -26,6 +29,13 @@
   --color-charcoal: var(--charcoal);
   --color-warm-gray: var(--warm-gray);
   --color-accent: var(--accent);
+  /* Semantic aliases */
+  --color-teal: var(--lavender);
+  --color-teal-light: var(--lavender-light);
+  --color-teal-dark: var(--lavender-dark);
+  --color-purple: var(--sage);
+  --color-purple-light: var(--sage-light);
+  --color-purple-dark: var(--sage-dark);
 }
 
 html {
