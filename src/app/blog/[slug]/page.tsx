@@ -113,6 +113,9 @@ export default async function BlogPostPage({
           </header>
 
           {/* Article content */}
+          {slug === "vaginismo-causas-sintomas-tratamiento-uruguay" && (
+            <VaginismoContent />
+          )}
           {slug === "uso-de-preservativos-uruguay" && (
             <PreservativosContent />
           )}
@@ -165,6 +168,339 @@ export default async function BlogPostPage({
         </article>
       </div>
     </>
+  );
+}
+
+function VaginismoContent() {
+  return (
+    <div
+      className="prose-article space-y-6 text-base leading-relaxed"
+      style={{ color: "var(--charcoal)" }}
+    >
+      <p>
+        Si sentís dolor, ardor o una sensación de "pared" cuando intentás la penetración
+        —ya sea en relaciones sexuales, en una revisación ginecológica o al usar tampones—,
+        no estás sola. Y lo más importante: lo que te pasa tiene nombre, tiene explicación y{" "}
+        <strong>tiene tratamiento</strong>.
+      </p>
+      <p>
+        El vaginismo es una de las condiciones que más atiendo en consulta, y también una de
+        las que más alivio genera cuando las personas entienden qué está pasando en su cuerpo
+        y que hay un camino concreto para superarlo. Esta guía está escrita para que tengas
+        esa claridad.
+      </p>
+
+      <h2
+        className="text-2xl font-bold mt-10"
+        style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+      >
+        ¿Qué es el vaginismo?
+      </h2>
+      <p>
+        El vaginismo es la contracción involuntaria de los músculos del suelo pélvico —
+        específicamente los músculos pubococcígeos— que rodean la entrada de la vagina.
+        Esta contracción ocurre de forma automática, sin que la persona lo decida o lo
+        controle conscientemente, ante la anticipación o el intento de penetración.
+      </p>
+      <p>
+        La contracción puede ser tan intensa que hace que la penetración sea dolorosa,
+        difícil o directamente imposible. No se trata de falta de deseo, de no estar
+        excitada, ni de "no querer". El cuerpo reacciona con una respuesta de protección
+        que, en este contexto, se volvió desadaptativa.
+      </p>
+      <p>
+        Es importante aclarar que el vaginismo{" "}
+        <strong>no es un defecto anatómico</strong>. La vagina no es "muy pequeña" ni está
+        "cerrada". La musculatura está en espasmo, y eso es algo que se puede trabajar y
+        resolver.
+      </p>
+
+      <h2
+        className="text-2xl font-bold mt-10"
+        style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+      >
+        Tipos de vaginismo: primario y secundario
+      </h2>
+      <p>
+        Distinguir el tipo de vaginismo ayuda a entender su origen y a orientar mejor el
+        tratamiento.
+      </p>
+
+      <h3 className="text-xl font-semibold mt-6">Vaginismo primario</h3>
+      <p>
+        Es el que estuvo presente desde siempre —desde los primeros intentos de penetración
+        en la vida de la persona. Muchas veces se manifiesta ya en la adolescencia al intentar
+        usar tampones, o en la primera visita al ginecólogo. En estos casos, la persona nunca
+        pudo tener relaciones con penetración sin dolor o sin que el cuerpo la bloqueara.
+      </p>
+      <p>
+        El vaginismo primario suele estar asociado a creencias muy arraigadas sobre la
+        sexualidad, a educación sexual restrictiva o culpabilizadora, a mensajes aprendidos
+        de que "la primera vez duele" (que normalizan el dolor como inevitable), o a ansiedad
+        anticipatoria que se instaló antes incluso de cualquier experiencia.
+      </p>
+
+      <h3 className="text-xl font-semibold mt-6">Vaginismo secundario</h3>
+      <p>
+        Aparece después de un período en que la penetración era posible sin dolor. Algo
+        cambia —una experiencia, una situación— y el cuerpo comienza a responder con la
+        contracción protectora.
+      </p>
+      <p>
+        Los desencadenantes más frecuentes del vaginismo secundario incluyen:
+      </p>
+      <ul className="list-disc pl-6 space-y-2">
+        <li>Un parto vaginal con complicaciones o desgarro</li>
+        <li>Una infección o procedimiento ginecológico doloroso</li>
+        <li>Una experiencia de abuso sexual o violencia</li>
+        <li>Un período prolongado sin actividad sexual (a veces combinado con menopausia)</li>
+        <li>Una relación con conflictos no resueltos</li>
+        <li>Diagnóstico de una enfermedad que genera miedo al dolor</li>
+      </ul>
+
+      <h2
+        className="text-2xl font-bold mt-10"
+        style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+      >
+        Causas del vaginismo
+      </h2>
+      <p>
+        El vaginismo no tiene una causa única. Es el resultado de una combinación de factores
+        que varían en cada persona. Lo que sí es claro es que <strong>no es un problema
+        "de voluntad"</strong> ni algo que se resuelva "intentando más fuerte" o "relajándote".
+      </p>
+
+      <h3 className="text-xl font-semibold mt-6">Factores psicológicos y emocionales</h3>
+      <ul className="list-disc pl-6 space-y-2">
+        <li>
+          <strong>Ansiedad anticipatoria:</strong> el miedo al dolor genera tensión muscular,
+          que genera dolor, que confirma el miedo. Un ciclo que se retroalimenta.
+        </li>
+        <li>
+          <strong>Educación sexual punitiva o religiosa:</strong> mensajes de que el sexo es
+          pecado, peligroso o "sucio" pueden instalarse como respuestas corporales de rechazo.
+        </li>
+        <li>
+          <strong>Experiencias de abuso o trauma sexual:</strong> el cuerpo aprende a
+          protegerse cerrándose ante la amenaza percibida.
+        </li>
+        <li>
+          <strong>Perfeccionismo y control:</strong> personas con alta necesidad de control
+          suelen tener más dificultad para "soltar" la musculatura pélvica.
+        </li>
+      </ul>
+
+      <h3 className="text-xl font-semibold mt-6">Factores físicos y médicos</h3>
+      <ul className="list-disc pl-6 space-y-2">
+        <li>Infecciones vaginales recurrentes que condicionaron la asociación penetración-dolor</li>
+        <li>Endometriosis o vulvodinia (dolor crónico vulvar)</li>
+        <li>Cambios hormonales (menopausia, postparto, anticonceptivos hormonales)</li>
+        <li>Cicatrices post-quirúrgicas o post-parto</li>
+      </ul>
+
+      <h3 className="text-xl font-semibold mt-6">Factores relacionales</h3>
+      <ul className="list-disc pl-6 space-y-2">
+        <li>Pareja con dificultades de erección o eyaculación que generan presión</li>
+        <li>Comunicación deficiente sobre el dolor durante el sexo</li>
+        <li>Sensación de obligación o de no poder decir que no</li>
+      </ul>
+
+      <h2
+        className="text-2xl font-bold mt-10"
+        style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+      >
+        Síntomas: ¿cómo sé si tengo vaginismo?
+      </h2>
+      <p>
+        El síntoma central es la dificultad o imposibilidad para la penetración vaginal
+        acompañada de dolor o sensación de bloqueo. Pero el vaginismo se manifiesta de
+        formas que van más allá de eso:
+      </p>
+      <ul className="list-disc pl-6 space-y-3">
+        <li>
+          <strong>Dolor ardiente, quemante o de presión</strong> en la entrada vaginal ante
+          el intento de penetración
+        </li>
+        <li>
+          <strong>Sensación de "pared" o de que "no entra"</strong>, aunque anatómicamente
+          no hay ningún obstáculo
+        </li>
+        <li>
+          <strong>Contracción visible o palpable</strong> de los músculos pélvicos ante la
+          anticipación
+        </li>
+        <li>
+          <strong>Dificultad para usar tampones</strong> o para tolerar la revisación
+          ginecológica
+        </li>
+        <li>
+          <strong>Ansiedad o evitación anticipatoria</strong>: miedo a las situaciones sexuales
+          antes de que sucedan
+        </li>
+        <li>
+          <strong>Culpa y frustración</strong> hacia una misma o hacia la pareja
+        </li>
+        <li>
+          <strong>Disminución del deseo sexual</strong> como mecanismo de evitación del dolor
+        </li>
+      </ul>
+      <p>
+        Si te identificás con varios de estos puntos, es importante que consultes con un
+        profesional. El diagnóstico diferencial con otras condiciones como la vulvodinia o la
+        dispareunia requiere una evaluación clínica.
+      </p>
+
+      <h2
+        className="text-2xl font-bold mt-10"
+        style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+      >
+        ¿Tiene cura el vaginismo?
+      </h2>
+      <p>
+        <strong>Sí. El vaginismo es una condición tratable con muy alta tasa de éxito.</strong>
+      </p>
+      <p>
+        Esto es lo más importante que quiero que te lleves de esta guía. No es una
+        condición crónica inevitable, no es "así sos vos", no es un defecto. Es una
+        respuesta aprendida del sistema nervioso que, con el abordaje adecuado, se puede
+        modificar.
+      </p>
+      <p>
+        La evidencia científica respalda el enfoque cognitivo-conductual para el tratamiento
+        del vaginismo, con resultados muy positivos incluso en casos de larga data. Las
+        personas que se someten a tratamiento especializado en sexología clínica logran, en
+        su gran mayoría, superar el vaginismo y tener relaciones sexuales sin dolor.
+      </p>
+
+      <h2
+        className="text-2xl font-bold mt-10"
+        style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+      >
+        Tratamiento del vaginismo: enfoque sexológico cognitivo-conductual
+      </h2>
+      <p>
+        El tratamiento que utilizo en consulta integra componentes cognitivos, conductuales
+        y corporales. No hay atajos ni soluciones mágicas, pero sí hay un proceso claro y
+        graduado que funciona.
+      </p>
+
+      <h3 className="text-xl font-semibold mt-6">1. Psicoeducación</h3>
+      <p>
+        Entender qué está pasando en el cuerpo es el primer paso terapéutico. Cuando la
+        persona comprende el mecanismo del vaginismo —que es una contracción refleja, no una
+        "decisión" del cuerpo de rechazar a la pareja—, el nivel de culpa y de ansiedad baja
+        considerablemente. Este solo cambio cognitivo ya tiene un efecto terapéutico.
+      </p>
+
+      <h3 className="text-xl font-semibold mt-6">2. Trabajo con creencias y cogniciones</h3>
+      <p>
+        Identificamos y cuestionamos las creencias que alimentan la respuesta de miedo: "el
+        sexo tiene que doler", "mi cuerpo está roto", "si no puedo tener sexo penetrativo
+        no soy suficiente". Muchas de estas creencias están tan internalizadas que la persona
+        no las reconoce como creencias sino como hechos.
+      </p>
+
+      <h3 className="text-xl font-semibold mt-6">3. Técnicas de relajación y conciencia corporal</h3>
+      <p>
+        Trabajamos con el sistema nervioso para bajar el nivel de activación ante los
+        estímulos que generan ansiedad. Esto incluye respiración diafragmática, mindfulness
+        corporal y técnicas de regulación del estrés.
+      </p>
+
+      <h3 className="text-xl font-semibold mt-6">4. Dilatación progresiva (desensibilización gradual)</h3>
+      <p>
+        Esta es la parte conductual del tratamiento. A través de un proceso gradual y
+        completamente controlado por la persona —nunca por la pareja ni por el terapeuta—,
+        se va aumentando la tolerancia a la penetración de forma progresiva. Se utilizan
+        dilatadores vaginales de distintos tamaños, comenzando por los más pequeños.
+      </p>
+      <p>
+        La clave es que el proceso ocurra en un estado de baja ansiedad, sin dolor, y
+        completamente a ritmo de la persona. No hay apuro ni metas externas. El objetivo
+        no es "llegar a cierto tamaño": es que el cuerpo aprenda que la penetración no es
+        una amenaza.
+      </p>
+
+      <h3 className="text-xl font-semibold mt-6">5. Trabajo con la pareja (cuando aplica)</h3>
+      <p>
+        En muchos casos, incluir a la pareja en el proceso terapéutico mejora notablemente
+        los resultados. La pareja aprende a acompañar sin presionar, entiende el mecanismo
+        del vaginismo, y trabaja en la comunicación y en la resignificación de la intimidad
+        más allá de la penetración.
+      </p>
+
+      <h2
+        className="text-2xl font-bold mt-10"
+        style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+      >
+        ¿Cuántas sesiones lleva el tratamiento?
+      </h2>
+      <p>
+        No hay una respuesta única, porque cada persona es diferente. Lo que sí puedo
+        decirte con confianza es que el proceso tiene un inicio, un desarrollo y un final:
+        no es una terapia interminable.
+      </p>
+      <ul className="list-disc pl-6 space-y-2">
+        <li>
+          <strong>Casos sin trauma complejo:</strong> 3 a 5 meses en promedio, con sesiones
+          cada 2–4 semanas.
+        </li>
+        <li>
+          <strong>Casos con historia de trauma o con muchos años de vaginismo:</strong> puede
+          extenderse a 6–12 meses, y en algunos casos conviene el trabajo paralelo con
+          psicoterapia individual de trauma.
+        </li>
+        <li>
+          <strong>Progreso en casa:</strong> el trabajo entre sesiones —con los ejercicios de
+          dilatación y relajación— es fundamental. Las sesiones marcan el camino, pero el
+          avance real ocurre en el día a día.
+        </li>
+      </ul>
+
+      <h2
+        className="text-2xl font-bold mt-10"
+        style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+      >
+        Cómo es la terapia para vaginismo conmigo
+      </h2>
+      <p>
+        Atiendo de forma presencial en Pocitos, Montevideo, y también online para todo
+        Uruguay y el exterior. Muchas personas prefieren el formato online para este tipo
+        de trabajo porque les da más privacidad y comodidad, especialmente para los
+        ejercicios en casa.
+      </p>
+      <p>
+        La primera sesión es una consulta de evaluación. Hablamos de tu historia, de cómo
+        se manifiesta el vaginismo en tu caso, de tus objetivos y de cualquier pregunta que
+        tengas. No hay examen físico en la consulta —eso, si es necesario, lo coordino con
+        ginecóloga.
+      </p>
+      <p>
+        Mi enfoque es clínico pero también humano. Trabajo sin juicio, sin prisa y con total
+        respeto por el ritmo de cada persona. El vaginismo no es una condición vergonzosa:
+        es algo que le pasa al cuerpo, y como cualquier cosa que le pasa al cuerpo, puede
+        atenderse con profesionalismo y cuidado.
+      </p>
+      <p>
+        Si querés dar el primer paso, podés{" "}
+        <Link
+          href="/contacto"
+          className="underline"
+          style={{ color: "var(--lavender-dark)" }}
+        >
+          escribirme desde acá
+        </Link>{" "}
+        o conocer más sobre cómo trabajo en{" "}
+        <Link
+          href="/terapia-sexual"
+          className="underline"
+          style={{ color: "var(--lavender-dark)" }}
+        >
+          terapia sexual
+        </Link>
+        .
+      </p>
+    </div>
   );
 }
 

@@ -13,6 +13,58 @@ export interface BlogPostMeta {
 
 export const blogPosts: BlogPostMeta[] = [
   {
+    slug: "vaginismo-causas-sintomas-tratamiento-uruguay",
+    title: "Vaginismo: Causas, Síntomas y Tratamiento — Guía de una Sexóloga Clínica",
+    description:
+      "El vaginismo tiene cura. Camila Jurfest, sexóloga clínica en Montevideo, explica qué es el vaginismo, sus causas, síntomas y cómo es el tratamiento cognitivo-conductual en Uruguay.",
+    publishedAt: "2026-03-28",
+    author: "Camila Jurfest",
+    category: "Terapia Sexual",
+    keywords: [
+      "vaginismo tratamiento",
+      "vaginismo síntomas",
+      "vaginismo causas",
+      "vaginismo cómo superar",
+      "terapeuta sexual vaginismo montevideo",
+      "sexóloga para vaginismo uruguay",
+      "vaginismo primario secundario",
+      "terapia sexual vaginismo",
+    ],
+    readingTime: 9,
+    faqs: [
+      {
+        question: "¿El vaginismo tiene cura?",
+        answer:
+          "Sí. El vaginismo es una condición tratable con muy alta tasa de éxito. Con un enfoque terapéutico adecuado —que combine trabajo cognitivo, corporal y gradual exposición— la gran mayoría de personas logra superar el vaginismo y tener relaciones sexuales sin dolor.",
+      },
+      {
+        question: "¿Cuánto tiempo lleva tratar el vaginismo?",
+        answer:
+          "Depende de cada persona, pero en promedio el proceso terapéutico lleva entre 3 y 6 meses con sesiones quincenales o mensuales. Hay casos que avanzan más rápido y otros que requieren más tiempo, especialmente cuando hay trauma o factores emocionales profundos involucrados.",
+      },
+      {
+        question: "¿El vaginismo es psicológico o físico?",
+        answer:
+          "Es ambos. El vaginismo implica una contracción muscular involuntaria real (física), pero esa contracción es desencadenada por señales del sistema nervioso vinculadas a ansiedad, miedo o experiencias previas (psicológico). Por eso el tratamiento más efectivo aborda ambas dimensiones.",
+      },
+      {
+        question: "¿Puedo quedar embarazada si tengo vaginismo?",
+        answer:
+          "En los casos más severos donde la penetración es imposible, el embarazo espontáneo no es viable. Sin embargo, el vaginismo tiene tratamiento y muchas personas superan la condición antes o durante el proceso de búsqueda de embarazo. Si este es tu caso, consultá con una sexóloga lo antes posible.",
+      },
+      {
+        question: "¿El vaginismo afecta también la excitación y el deseo?",
+        answer:
+          "No necesariamente. Muchas personas con vaginismo sienten deseo sexual y excitación con normalidad, pero el miedo a la penetración puede ir generando evitación, lo que eventualmente puede afectar el deseo. El tratamiento aborda también esta dimensión para que la sexualidad no quede reducida a la penetración.",
+      },
+      {
+        question: "¿Qué diferencia hay entre vaginismo y dispareunia?",
+        answer:
+          "La dispareunia es dolor durante la penetración que puede tener causas físicas (infecciones, endometriosis, vulvodinia). El vaginismo es específicamente la contracción muscular involuntaria que impide o dificulta la penetración. Pueden coexistir, y por eso es importante un diagnóstico diferencial con profesional de salud.",
+      },
+    ],
+  },
+  {
     slug: "uso-de-preservativos-uruguay",
     title: "Uso de Preservativos en Uruguay: Guía Completa 2024",
     description:
