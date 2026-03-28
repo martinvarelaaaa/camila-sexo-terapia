@@ -113,6 +113,9 @@ export default async function BlogPostPage({
           </header>
 
           {/* Article content */}
+          {slug === "que-es-la-terapia-sexual" && (
+            <TerapiaSexualContent />
+          )}
           {slug === "uso-de-preservativos-uruguay" && (
             <PreservativosContent />
           )}
@@ -165,6 +168,267 @@ export default async function BlogPostPage({
         </article>
       </div>
     </>
+  );
+}
+
+function TerapiaSexualContent() {
+  return (
+    <div
+      className="prose-article space-y-6 text-base leading-relaxed"
+      style={{ color: "var(--charcoal)" }}
+    >
+      <p>
+        Cuando alguien busca "terapia sexual" por primera vez, suele hacerlo desde un lugar
+        de incomodidad: algo no funciona como esperaba, algo le genera angustia, o
+        simplemente siente que la sexualidad no ocupa el lugar que debería en su vida.
+        Y casi siempre hay una pregunta que no se anima a hacerle a nadie:{" "}
+        <strong>¿esto tiene solución?</strong>
+      </p>
+      <p>
+        La respuesta corta es sí. La terapia sexual existe exactamente para eso. Y en
+        esta guía te explico qué es, cómo funciona, qué problemas trata y cuándo tiene
+        sentido buscar ayuda.
+      </p>
+
+      <h2
+        className="text-2xl font-bold mt-10"
+        style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+      >
+        ¿Qué es exactamente la terapia sexual?
+      </h2>
+      <p>
+        La terapia sexual es una forma especializada de psicoterapia que se enfoca en
+        la sexualidad humana: su funcionamiento, sus dificultades y su bienestar. No es
+        solo hablar de sexo con un profesional —es un proceso estructurado, basado en
+        evidencia, que combina técnicas psicológicas con educación sexual clínica.
+      </p>
+      <p>
+        A diferencia de lo que muchos imaginan, <strong>no hay contacto físico</strong> en
+        las sesiones. Todo el trabajo ocurre en el plano verbal y cognitivo. Se trabaja con
+        técnicas como la reestructuración cognitiva (cambiar pensamientos disfuncionales
+        sobre el sexo), la terapia de exposición, los ejercicios de foco sensorial, y
+        herramientas de comunicación interpersonal.
+      </p>
+
+      <h2
+        className="text-2xl font-bold mt-10"
+        style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+      >
+        ¿En qué se diferencia de la psicoterapia tradicional?
+      </h2>
+      <p>
+        La psicoterapia clásica aborda la salud mental en sentido amplio: ansiedad,
+        depresión, relaciones, autoestima. La terapia sexual tiene un foco específico:
+        la sexualidad y todo lo que la rodea.
+      </p>
+      <p>
+        Esto importa porque la sexualidad tiene sus propios mecanismos fisiológicos,
+        psicológicos y relacionales. Un terapeuta sin formación especializada puede
+        acompañar el proceso emocional, pero no tiene las herramientas técnicas para
+        trabajar una disfunción eréctil, un trastorno del deseo o el vaginismo con el
+        mismo nivel de precisión que alguien con formación sexológica clínica.
+      </p>
+      <p>
+        Un/a{" "}
+        <Link
+          href="/sobre-mi"
+          className="underline"
+          style={{ color: "var(--lavender-dark)" }}
+        >
+          sexólogo/a clínico/a
+        </Link>{" "}
+        tiene formación específica en respuesta sexual humana, disfunciones sexuales,
+        identidad, diversidad y técnicas terapéuticas con evidencia científica.
+      </p>
+
+      <h2
+        className="text-2xl font-bold mt-10"
+        style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+      >
+        ¿Qué problemas trata la terapia sexual?
+      </h2>
+      <p>
+        El abanico es amplio. Algunos de los motivos de consulta más frecuentes:
+      </p>
+
+      <h3 className="text-xl font-semibold mt-6">Disfunciones sexuales</h3>
+      <ul className="list-disc pl-6 space-y-2">
+        <li>
+          <strong>Dificultades con el deseo:</strong> bajo deseo sexual (hipoactividad),
+          discrepancia de deseo en pareja, o deseo que genera conflicto.
+        </li>
+        <li>
+          <strong>Dificultades con la excitación:</strong> falta de lubricación vaginal,
+          disfunción eréctil, problemas para alcanzar o mantener la erección.
+        </li>
+        <li>
+          <strong>Dificultades con el orgasmo:</strong> anorgasmia (dificultad para
+          alcanzar el orgasmo), eyaculación precoz, eyaculación retardada.
+        </li>
+        <li>
+          <strong>Dolor sexual:</strong> vaginismo, dispareunía (dolor durante la
+          penetración), vulvodinia.
+        </li>
+      </ul>
+
+      <h3 className="text-xl font-semibold mt-6">Aspectos identitarios y relacionales</h3>
+      <ul className="list-disc pl-6 space-y-2">
+        <li>Exploración de la orientación sexual o identidad de género</li>
+        <li>Vivencias de vergüenza, culpa o conflicto en torno a la sexualidad</li>
+        <li>Dificultades para comunicarse con la pareja sobre el sexo</li>
+        <li>Después de una infidelidad o crisis de pareja que afecta la vida sexual</li>
+        <li>Impacto de la historia personal (trauma, abuso) en la sexualidad actual</li>
+      </ul>
+
+      <h3 className="text-xl font-semibold mt-6">Cambios vitales</h3>
+      <ul className="list-disc pl-6 space-y-2">
+        <li>Sexualidad durante el embarazo y el posparto</li>
+        <li>Cambios en la sexualidad por menopausia o andropausia</li>
+        <li>Impacto de enfermedades crónicas o medicamentos en la vida sexual</li>
+        <li>Retomar la vida sexual después de un período de abstinencia</li>
+      </ul>
+
+      <h2
+        className="text-2xl font-bold mt-10"
+        style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+      >
+        ¿Cómo son las sesiones de terapia sexual?
+      </h2>
+      <p>
+        La primera sesión siempre es de evaluación. El objetivo es entender el motivo de
+        consulta en profundidad: cuándo empezó, qué lo genera, qué lo mantiene, qué recursos
+        tiene la persona. No hay nada raro ni invasivo en esto —es una conversación
+        profesional, con preguntas específicas, en un marco de total confidencialidad.
+      </p>
+      <p>
+        A partir de esa evaluación, se arma un plan de trabajo personalizado. Las sesiones
+        siguientes combinan distintos elementos según el caso:
+      </p>
+      <ul className="list-disc pl-6 space-y-3">
+        <li>
+          <strong>Psicoeducación:</strong> información precisa sobre anatomía, respuesta
+          sexual, mitos frecuentes. Muchas dificultades sexuales se alimentan de
+          información incorrecta.
+        </li>
+        <li>
+          <strong>Trabajo cognitivo:</strong> identificar y modificar pensamientos
+          automáticos negativos sobre el sexo ("soy anormal", "a mi pareja no le intereso",
+          "siempre me va a pasar lo mismo").
+        </li>
+        <li>
+          <strong>Técnicas conductuales:</strong> ejercicios estructurados para hacer en
+          privado o en pareja, diseñados para recuperar la conexión con el propio cuerpo
+          o con la pareja.
+        </li>
+        <li>
+          <strong>Comunicación:</strong> herramientas concretas para hablar de sexo con la
+          pareja, expresar deseos y límites, y negociar diferencias.
+        </li>
+      </ul>
+      <p>
+        Las sesiones suelen durar entre 50 y 60 minutos y tienen frecuencia semanal o
+        quincenal. También pueden hacerse de forma presencial en Pocitos, Montevideo, o{" "}
+        <Link
+          href="/terapia-sexual"
+          className="underline"
+          style={{ color: "var(--lavender-dark)" }}
+        >
+          de forma online
+        </Link>{" "}
+        para todo Uruguay y el exterior.
+      </p>
+
+      <h2
+        className="text-2xl font-bold mt-10"
+        style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+      >
+        ¿Cuándo buscar ayuda de una sexóloga clínica?
+      </h2>
+      <p>
+        No existe un umbral mínimo de sufrimiento para ir a terapia sexual. No es necesario
+        "estar muy mal" o que la dificultad sea grave. Algunos indicadores que pueden
+        orientarte:
+      </p>
+      <ul className="list-disc pl-6 space-y-3">
+        <li>
+          Algo relacionado con tu sexualidad te genera angustia, vergüenza o evitación
+          de forma recurrente.
+        </li>
+        <li>
+          Tenés una dificultad funcional (orgasmo, erección, dolor, deseo) que se repite
+          y no mejora sola.
+        </li>
+        <li>
+          La vida sexual de tu pareja está afectada y no saben cómo abordarlo.
+        </li>
+        <li>
+          Sentís que tu historia personal afecta tu capacidad de disfrutar o conectar
+          íntimamente.
+        </li>
+        <li>
+          Querés explorar tu sexualidad desde un lugar más libre y consciente, sin que
+          haya necesariamente un "problema".
+        </li>
+      </ul>
+      <p>
+        Este último punto es importante: la terapia sexual no es solo para cuando algo
+        "no funciona". También es para quienes quieren conocerse mejor, ampliar su
+        repertorio o simplemente tener un espacio de reflexión sobre su vida sexual.
+      </p>
+
+      <h2
+        className="text-2xl font-bold mt-10"
+        style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+      >
+        Terapia sexual en Uruguay: qué esperar
+      </h2>
+      <p>
+        En Uruguay, la salud sexual como campo profesional ha crecido en los últimos años,
+        pero la oferta especializada sigue siendo limitada. Es importante distinguir entre
+        un psicólogo general que trabaja temas de sexualidad y un sexólogo clínico con
+        formación específica.
+      </p>
+      <p>
+        Al buscar un/a terapeuta sexual en Montevideo o en Uruguay, conviene verificar:
+      </p>
+      <ul className="list-disc pl-6 space-y-2">
+        <li>Formación en psicología o medicina (título universitario habilitado)</li>
+        <li>Especialización en sexología clínica (posgrado, no solo cursos)</li>
+        <li>Enfoque terapéutico basado en evidencia (cognitivo-conductual, sistémico)</li>
+        <li>Posibilidad de atención online, para mayor accesibilidad desde el interior</li>
+      </ul>
+      <p>
+        La{" "}
+        <Link
+          href="/terapia-sexual"
+          className="underline"
+          style={{ color: "var(--lavender-dark)" }}
+        >
+          terapia sexual
+        </Link>{" "}
+        que ofrezco combina la formación en psicología clínica (UCU), la especialización
+        en sexología clínica (SUS Uruguay) y la terapia sexual cognitivo-conductual-sistémica
+        (UBA). Las consultas son presenciales en Pocitos y online para todo el país y el exterior.
+      </p>
+
+      <h2
+        className="text-2xl font-bold mt-10"
+        style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+      >
+        Conclusión
+      </h2>
+      <p>
+        La terapia sexual es un proceso psicológico especializado que trabaja la sexualidad
+        desde un lugar clínico, empático y sin juicio. No requiere contacto físico, no es
+        algo "raro" y no exige que la situación sea extrema para buscarla.
+      </p>
+      <p>
+        Si algo en tu vida sexual te genera malestar, curiosidad o simplemente querés un
+        espacio para hablarlo sin tabúes, ese es motivo suficiente. El primer paso —pedir
+        turno y contar lo que pasa— suele ser el más difícil. Después de eso, el camino
+        se hace más fácil.
+      </p>
+    </div>
   );
 }
 
