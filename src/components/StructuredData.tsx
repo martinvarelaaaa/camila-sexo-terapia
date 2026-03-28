@@ -1,4 +1,5 @@
 import type { Service } from "@/app/servicios/data";
+import type { BlogPostMeta } from "@/app/blog/posts";
 
 export function LocalBusinessStructuredData() {
   const data = {
@@ -122,6 +123,44 @@ export function ServiceStructuredData({ service }: { service: Service }) {
         },
       },
     ],
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+    />
+  );
+}
+
+export function ArticleStructuredData({ post }: { post: BlogPostMeta }) {
+  const data = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": `https://www.camilajurfest.com/blog/${post.slug}#article`,
+    headline: post.title,
+    description: post.description,
+    datePublished: post.publishedAt,
+    dateModified: post.updatedAt ?? post.publishedAt,
+    author: {
+      "@type": "Person",
+      "@id": "https://www.camilajurfest.com/#person",
+      name: "Camila Jurfest",
+      url: "https://www.camilajurfest.com/sobre-mi",
+    },
+    publisher: {
+      "@id": "https://www.camilajurfest.com/#business",
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://www.camilajurfest.com/blog/${post.slug}`,
+    },
+    keywords: post.keywords.join(", "),
+    inLanguage: "es-UY",
+    about: {
+      "@type": "MedicalWebPage",
+      name: post.title,
+    },
   };
 
   return (
